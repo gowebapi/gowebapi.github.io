@@ -1,2 +1,3 @@
 # homepage
-Home page
+
+input files are in mkdocs directory
