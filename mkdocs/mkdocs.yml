@@ -1,0 +1,15 @@
+site_name: Go Web API
+nav:
+  - Home: index.md
+  - Reference:
+    - Files:
+      - Overview: file/overview.md
+      - WebIDL: file/webidl.md
+      - Transform: file/transform.md
+    - Go Language:
+      - Overrview: go/overview.md
+      - Type conversion: go/typeconv.md
+      - syscall.js: go/syscalljs.md
+copyright: Martin Juhlin, 2019
+strict: true
+dev_addr: 0.0.0.0:8000
