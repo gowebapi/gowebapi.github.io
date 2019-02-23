@@ -49,6 +49,9 @@
                             <li >
                                 <a href="../..">Home</a>
                             </li>
+                            <li >
+                                <a href="../../status/">Status</a>
+                            </li>
                             <li class="dropdown active">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Reference <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
@@ -117,10 +120,11 @@
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
         <li class="main active"><a href="#language-transformation-file">Language transformation file</a></li>
-            <li><a href="#callback">Callback</a></li>
-            <li><a href="#dictionary">Dictionary</a></li>
-            <li><a href="#enum">Enum</a></li>
-            <li><a href="#interface">Interface</a></li>
+            <li><a href="#type-modifications">Type modifications</a></li>
+            <li><a href="#modify-multiple-types-at-onces">Modify multiple types at onces</a></li>
+            <li><a href="#regular-expression">Regular Expression</a></li>
+            <li><a href="#change-type">Change Type</a></li>
+            <li><a href="#spec-file-information">Spec File Information</a></li>
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
@@ -152,7 +156,9 @@ helloWorld = SayHelloWorld
 
 </code></pre>
 
-<h2 id="callback">Callback</h2>
+<h2 id="type-modifications">Type modifications</h2>
+<p>Following properties exist on different types that can be changed:</p>
+<h3 id="callback">Callback</h3>
 <table>
 <thead>
 <tr>
@@ -174,7 +180,7 @@ helloWorld = SayHelloWorld
 </tr>
 </tbody>
 </table>
-<h2 id="dictionary">Dictionary</h2>
+<h3 id="dictionary">Dictionary</h3>
 <table>
 <thead>
 <tr>
@@ -196,7 +202,7 @@ helloWorld = SayHelloWorld
 </tr>
 </tbody>
 </table>
-<h2 id="enum">Enum</h2>
+<h3 id="enum">Enum</h3>
 <table>
 <thead>
 <tr>
@@ -228,7 +234,7 @@ helloWorld = SayHelloWorld
 </tr>
 </tbody>
 </table>
-<h2 id="interface">Interface</h2>
+<h3 id="interface">Interface</h3>
 <p>Interfaces have following properites</p>
 <table>
 <thead>
@@ -265,7 +271,70 @@ helloWorld = SayHelloWorld
 <td>"New" + instance name</td>
 </tr>
 </tbody>
-</table></div>
+</table>
+<h2 id="modify-multiple-types-at-onces">Modify multiple types at onces</h2>
+<p>Any property that under the initail will affect all idl types:</p>
+<pre><code class="markdown"># Foo
+
+    all types in foo.idl will get below package
+
+.package = hello/world/foo
+
+## HelloWorld
+
+    with the exception of HelloWorld that is changed to bar
+
+.package = bar
+
+</code></pre>
+
+<p>Currently only <strong>package</strong> is supported as file global change.</p>
+<h2 id="regular-expression">Regular Expression</h2>
+<p>It's possible do a regular expression according to <a href="https://golang.org/pkg/regexp/">Go regexp syntax</a>.</p>
+<p>Syntax wise: <code>@on [interface|enum|callback|dictionary] "expression" : normal command</code></p>
+<p>Example:</p>
+<pre><code class="markdown"># HTML
+
+    all types matching below will be moved to new package
+
+@on &quot;HTML.&quot; : .package = github.com/gowebapi/webapi/html
+
+    only moving enums
+
+@on enum &quot;.Event&quot; : .package = github.com/gowebapi/webapi/html/event
+
+    rename method or attribute name on matching interface types
+
+@on interface &quot;Hello.&quot; : name = GetHelloName
+
+    ...
+
+</code></pre>
+
+<h2 id="change-type">Change Type</h2>
+<p>Sometimes it can be nessary to change the type on attributes. The main reason
+is to break up circular dependency between packages. Example:</p>
+<pre><code class="markdown"># DOM Standard
+
+.package = github.com/gowebapi/webapi/dom
+.title = DOM Standard
+.url = &lt;https://dom.spec.whatwg.org/&gt;
+
+## Node
+
+@changetype ownerDocument rawjs
+</code></pre>
+
+<p>It's current only possible to change to <strong>rawjs</strong> that result in an undecoded <strong>js.Value</strong>.</p>
+<h2 id="spec-file-information">Spec File Information</h2>
+<p>The binding generator have the option to create a <a href="../../status/">specification status file</a>. Information to create that page is based on transformation file
+by below property fields that need to be placed in the file header.</p>
+<p>|Syntax Name|Description|
+|.title|Specification title name|
+|.url|Document link|</p>
+<p>There is also template support, if a filename is detected with the same
+start, but ends with <code>.tmpl.md</code>, specification status will replace
+<code>%FULLSTATUS%</code> and <code>%SHORTSTATUS%</code>.</p></div>
         </div>
 
         <footer class="col-md-12">

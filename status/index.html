@@ -1,0 +1,935 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>Status - Go Web API</title>
+        <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <!-- Expander button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="..">Go Web API</a>
+                </div>
+
+                <!-- Expanded navigation -->
+                <div class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li >
+                                <a href="..">Home</a>
+                            </li>
+                            <li class="active">
+                                <a href="./">Status</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Reference <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Files</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../file/overview/">Overview</a>
+</li>
+            
+<li >
+    <a href="../file/webidl/">WebIDL</a>
+</li>
+            
+<li >
+    <a href="../file/transform/">Transform</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Go Language</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../go/overview/">Overrview</a>
+</li>
+            
+<li >
+    <a href="../go/typeconv/">Type conversion</a>
+</li>
+            
+<li >
+    <a href="../go/syscalljs/">syscall.js</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li >
+                                <a rel="next" href="..">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li >
+                                <a rel="prev" href="../file/overview/">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#status">Status</a></li>
+            <li><a href="#included-standard">Included standard</a></li>
+            <li><a href="#missing-standard">Missing standard</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h1 id="status">Status</h1>
+<p>This page contains the status of different browser standard that is included
+in generated API.</p>
+<h2 id="included-standard">Included standard</h2>
+<table>
+<thead>
+<tr>
+<th>Spec</th>
+<th>Included</th>
+<th>Comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://drafts.csswg.org/css-animations/">CSS Animations Level 1</a></td>
+<td>Yes</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://drafts.csswg.org/css-conditional-3/">CSS Conditional Rules Module Level 3</a></td>
+<td>Yes</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://drafts.csswg.org/css-counter-styles/">CSS Counter Styles Level 3</a></td>
+<td>Yes</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://drafts.csswg.org/css-device-adapt/">CSS Device Adaptation Module Level 1</a></td>
+<td>Yes</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://drafts.csswg.org/css-font-loading/">CSS Font Loading Module Level 3</a></td>
+<td>Yes</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://drafts.csswg.org/css-fonts-4/">CSS Fonts Module Level 4</a></td>
+<td>Yes</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://drafts.css-houdini.org/css-layout-api-1/">CSS Layout API Level 1</a></td>
+<td>Yes</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://drafts.csswg.org/cssom/">CSS Object Model</a></td>
+<td>Yes</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://drafts.css-houdini.org/css-paint-api-1/">CSS Painting API Level 1</a></td>
+<td>Yes</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://drafts.css-houdini.org/css-properties-values-api-1/">CSS Properties and Values API Level 1</a></td>
+<td>Yes</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://drafts.csswg.org/css-pseudo-4/">CSS Pseudo-Elements Module Level 4</a></td>
+<td>Yes</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://drafts.csswg.org/css-regions/">CSS Regions Module Level 1</a></td>
+<td>Yes</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://drafts.csswg.org/css-transitions/">CSS Transitions</a></td>
+<td>Yes</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://drafts.css-houdini.org/css-typed-om-1/">CSS Typed OM Level 1</a></td>
+<td>Yes</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://drafts.csswg.org/cssom-view/">CSSOM View Module</a></td>
+<td>Yes</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://dom.spec.whatwg.org/">DOM Standard</a></td>
+<td>Yes</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://fetch.spec.whatwg.org/">Fetch Standard</a></td>
+<td>Yes</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://w3c.github.io/FileAPI/">File API</a></td>
+<td>Yes</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://fullscreen.spec.whatwg.org/">Fullscreen API Standard</a></td>
+<td>Yes</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://drafts.fxtf.org/geometry/">Geometry Interfaces Module Level 1</a></td>
+<td>Yes</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://html.spec.whatwg.org/">HTML Standard</a></td>
+<td>Yes</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://w3c.github.io/media-source/">Media Source Extensions™</a></td>
+<td>Yes</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://notifications.spec.whatwg.org/">Notifications API Standard</a></td>
+<td>Yes</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://w3c.github.io/page-visibility/">Page Visibility Level 2</a></td>
+<td>Yes</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://w3c.github.io/webappsec-referrer-policy/">Referrer Policy</a></td>
+<td>Yes</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://w3c.github.io/ServiceWorker/v1/">Service Workers 1</a></td>
+<td>Yes</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://w3c.github.io/uievents/">UI Events</a></td>
+<td>Yes</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://url.spec.whatwg.org/">URL Standard</a></td>
+<td>Yes</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://www.khronos.org/registry/webgl/specs/latest/1.0/">WebGL 1.0 Specification</a></td>
+<td>Yes</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://www.khronos.org/registry/webgl/specs/latest/2.0/">WebGL 2.0 Specification</a></td>
+<td>Yes</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://drafts.css-houdini.org/worklets/">Worklets Level 1</a></td>
+<td>Yes</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://xhr.spec.whatwg.org/">XMLHttpRequest Standard</a></td>
+<td>Yes</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="missing-standard">Missing standard</h2>
+<table>
+<thead>
+<tr>
+<th>Spec</th>
+<th>Included</th>
+<th>Comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://wicg.github.io/shape-detection-api/">Accelerated Shape Detection in Images</a></td>
+<td>No</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://w3c.github.io/accelerometer/">Accelerometer</a></td>
+<td>No</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="WAI-ARIA">Accessible Rich Internet Applications</a></td>
+<td>No</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://w3c.github.io/ambient-light/">Ambient Light Sensor</a></td>
+<td>No</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://w3c.github.io/mediacapture-output/">Audio Output Devices API</a></td>
+<td>No</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://wicg.github.io/background-fetch/">Background Fetch</a></td>
+<td>No</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://w3c.github.io/battery/">Battery Status API</a></td>
+<td>No</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://w3c.github.io/beacon/">Beacon</a></td>
+<td>No</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://drafts.css-houdini.org/box-tree-api/">Box Tree API Level 1</a></td>
+<td>No</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://wicg.github.io/cors-rfc1918/">CORS and RFC1918</a></td>
+<td>No</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://wicg.github.io/animation-worklet/">CSS Animation Worklet API</a></td>
+<td>No</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://drafts.csswg.org/css-images-4/">CSS Images Module Level 4</a></td>
+<td>No</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://drafts.fxtf.org/css-masking-1/">CSS Masking Module Level 1</a></td>
+<td>No</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://wicg.github.io/CSS-Parser-API/">CSS Parser API</a></td>
+<td>No</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://w3c.github.io/clipboard-apis/">Clipboard API and events</a></td>
+<td>No</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://compat.spec.whatwg.org/">Compatibility Standard</a></td>
+<td>No</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://console.spec.whatwg.org/">Console Standard</a></td>
+<td>No</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://w3c.github.io/webappsec-cspee/">Content Security Policy</a></td>
+<td>No</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://w3c.github.io/webappsec-csp/">Content Security Policy Level 3</a></td>
+<td>No</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://wicg.github.io/cookie-store/">Cookie Store API</a></td>
+<td>No</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://w3c.github.io/requestidlecallback/">Cooperative Scheduling of Background Tasks</a></td>
+<td>No</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://w3c.github.io/webappsec-credential-management/">Credential Management Level 1</a></td>
+<td>No</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://w3c.github.io/DOM-Parsing/">DOM Parsing and Serialization</a></td>
+<td>No</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://w3c.github.io/deviceorientation/spec-source-orientation.html">DeviceOrientation Event Specification</a></td>
+<td>No</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://encoding.spec.whatwg.org/">Encoding Standard</a></td>
+<td>No</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://w3c.github.io/encrypted-media/">Encrypted Media Extensions</a></td>
+<td>No</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://wicg.github.io/event-timing/">Event Timing API</a></td>
+<td>No</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://w3c.github.io/webappsec-feature-policy/">Feature Policy</a></td>
+<td>No</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://wicg.github.io/entries-api/">File and Directory Entries API</a></td>
+<td>No</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://drafts.fxtf.org/filter-effects-1/">Filter Effects Module Level 1</a></td>
+<td>No</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://drafts.css-houdini.org/font-metrics-api/">Font Metrics API Level 1</a></td>
+<td>No</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://w3c.github.io/gamepad/">Gamepad</a></td>
+<td>No</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://w3c.github.io/sensors/">Generic Sensor API</a></td>
+<td>No</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://www.w3.org/TR/geolocation-API/">Geolocation API Specification 2nd Edition</a></td>
+<td>No</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://wicg.github.io/geolocation-sensor/">Geolocation Sensor</a></td>
+<td>No</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://w3c.github.io/gyroscope/">Gyroscope</a></td>
+<td>No</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://w3c.github.io/html-media-capture/">HTML Media Capture</a></td>
+<td>No</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://w3c.github.io/hr-time/">High Resolution Time Level 2</a></td>
+<td>No</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://w3c.github.io/webrtc-stats/">Identifiers for WebRTC's Statistics API</a></td>
+<td>No</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://w3c.github.io/IndexedDB/">Indexed Database API 3.0</a></td>
+<td>No</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://wicg.github.io/InputDeviceCapabilities/">Input Device Capabilities</a></td>
+<td>No</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://cdn.staticaly.com/gh/w3c/input-events/v1/index.html">Input Events Level 1</a></td>
+<td>No</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://w3c.github.io/IntersectionObserver/">Intersection Observer</a></td>
+<td>No</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://w3c.github.io/keyboard-lock/">Keyboard Lock</a></td>
+<td>No</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://wicg.github.io/keyboard-map/">Keyboard Map</a></td>
+<td>No</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://w3c.github.io/longtasks/">Long Tasks API 1</a></td>
+<td>No</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://w3c.github.io/magnetometer/">Magnetometer</a></td>
+<td>No</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://wicg.github.io/media-capabilities/">Media Capabilities</a></td>
+<td>No</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://w3c.github.io/mediacapture-depth/">Media Capture Depth Stream Extensions</a></td>
+<td>No</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://w3c.github.io/mediacapture-main/">Media Capture and Streams</a></td>
+<td>No</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://w3c.github.io/mediacapture-fromelement/">Media Capture from DOM Elements</a></td>
+<td>No</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://wicg.github.io/mediasession/">Media Session Standard</a></td>
+<td>No</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://w3c.github.io/mediacapture-image/">MediaStream Image Capture</a></td>
+<td>No</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://w3c.github.io/mediacapture-record/">MediaStream Recording</a></td>
+<td>No</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://w3c.github.io/mst-content-hint/">MediaStreamTrack Content Hints</a></td>
+<td>No</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://w3c.github.io/navigation-timing/">Navigation Timing Level 2</a></td>
+<td>No</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://wicg.github.io/netinfo/">Network Information API</a></td>
+<td>No</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://w3c.github.io/orientation-sensor/">Orientation Sensor</a></td>
+<td>No</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://w3c.github.io/paint-timing/">Paint Timing 1</a></td>
+<td>No</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://w3c.github.io/payment-handler/">Payment Handler API</a></td>
+<td>No</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://w3c.github.io/payment-method-basic-card/">Payment Method</a></td>
+<td>No</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://w3c.github.io/payment-request/">Payment Request API</a></td>
+<td>No</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://w3c.github.io/performance-timeline/">Performance Timeline Level 2</a></td>
+<td>No</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://w3c.github.io/permissions/">Permissions</a></td>
+<td>No</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://wicg.github.io/picture-in-picture/">Picture-in-Picture</a></td>
+<td>No</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://w3c.github.io/pointerevents/">Pointer Events</a></td>
+<td>No</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://w3c.github.io/pointerlock/">Pointer Lock 2.0</a></td>
+<td>No</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://w3c.github.io/pointerevents/extension.html">PointerEvents - Level 2 - Extensions</a></td>
+<td>No</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://w3c.github.io/presentation-api/">Presentation API</a></td>
+<td>No</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://w3c.github.io/proximity/">Proximity Sensor</a></td>
+<td>No</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://w3c.github.io/push-api/">Push API</a></td>
+<td>No</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://w3c.github.io/remote-playback/">Remote Playback API</a></td>
+<td>No</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://w3c.github.io/reporting/">Reporting API 1</a></td>
+<td>No</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://wicg.github.io/ResizeObserver/">Resize Observer 1</a></td>
+<td>No</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://w3c.github.io/resource-timing/">Resource Timing Level 2</a></td>
+<td>No</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="SVG">Scalable Vector Graphics</a></td>
+<td>No</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://w3c.github.io/mediacapture-screen-share/">Screen Capture</a></td>
+<td>No</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://wicg.github.io/scroll-animations/">Scroll-linked Animations</a></td>
+<td>No</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://w3c.github.io/webappsec-secure-contexts/">Secure Contexts</a></td>
+<td>No</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://w3c.github.io/selection-api/">Selection API</a></td>
+<td>No</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://w3c.github.io/server-timing/">Server Timing</a></td>
+<td>No</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://storage.spec.whatwg.org/">Storage Standard</a></td>
+<td>No</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://w3c.github.io/webappsec-subresource-integrity/">Subresource Integrity</a></td>
+<td>No</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://w3c.github.io/screen-orientation/">The Screen Orientation API</a></td>
+<td>No</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://w3c.github.io/touch-events/">Touch Events - Level 2</a></td>
+<td>No</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://w3c.github.io/user-timing/">User Timing Level 3</a></td>
+<td>No</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="Second Edition">Vibration API</a></td>
+<td>No</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://w3c.github.io/wake-lock/">Wake Lock API</a></td>
+<td>No</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://drafts.csswg.org/web-animations-1/">Web Animations</a></td>
+<td>No</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://w3c.github.io/manifest/">Web App Manifest</a></td>
+<td>No</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://webaudio.github.io/web-audio-api/">Web Audio API</a></td>
+<td>No</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://w3c.github.io/webauthn/">Web Authentication</a></td>
+<td>No</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://wicg.github.io/BackgroundSync/spec/">Web Background Synchronization</a></td>
+<td>No</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://webbluetoothcg.github.io/web-bluetooth/">Web Bluetooth</a></td>
+<td>No</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://w3c.github.io/webcrypto/Overview.html">Web Cryptography API</a></td>
+<td>No</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://heycam.github.io/webidl/">Web IDL</a></td>
+<td>No</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://webaudio.github.io/web-midi-api/">Web MIDI API</a></td>
+<td>No</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://w3c.github.io/web-nfc/">Web NFC API</a></td>
+<td>No</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://wicg.github.io/web-share/">Web Share API - Level 1</a></td>
+<td>No</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://w3c.github.io/speech-api/">Web Speech API</a></td>
+<td>No</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://webassembly.github.io/spec/js-api/">WebAssembly JavaScript Interface</a></td>
+<td>No</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://webassembly.github.io/spec/web-api/">WebAssembly Web API</a></td>
+<td>No</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://w3c.github.io/webdriver/">WebDriver</a></td>
+<td>No</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://w3c.github.io/webrtc-pc/">WebRTC 1.0</a></td>
+<td>No</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://w3c.github.io/webrtc-dscp-exp/">WebRTC DSCP Control API</a></td>
+<td>No</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://wicg.github.io/webusb/">WebUSB API</a></td>
+<td>No</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://w3c.github.io/webvtt/">WebVTT</a></td>
+<td>No</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://immersive-web.github.io/webxr/">WebXR Device API</a></td>
+<td>No</td>
+<td></td>
+</tr>
+</tbody>
+</table></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+                <p>Martin Juhlin, 2019</p>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../js/base.js" defer></script>
+        <script src="../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

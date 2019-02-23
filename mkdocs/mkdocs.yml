@@ -1,6 +1,7 @@
 site_name: Go Web API
 nav:
   - Home: index.md
+  - Status: status.md
   - Reference:
     - Files:
       - Overview: file/overview.md

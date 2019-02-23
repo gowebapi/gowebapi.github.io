@@ -47,6 +47,8 @@ func main() {
 Currently the binder can process the DOM and HTML specification and create a compilable output. It's not 100% feature complete as the specifications depends
 on other that is currently not processed.
 
+See [this page](status.md) about current supported browser standard.
+
 There is also limitation in the Go language, see [overview page](go/overview.md) on how static methods etc is handeled.
 
 API Documentation can be found here: [![GoDoc](https://godoc.org/github.com/gowebapi/webapi?status.svg)](https://godoc.org/github.com/gowebapi/webapi)
