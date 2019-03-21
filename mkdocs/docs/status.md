@@ -33,6 +33,7 @@ in generated API.
 |[Cookie Store API](https://wicg.github.io/cookie-store/)|Yes||
 |[Cooperative Scheduling of Background Tasks](https://w3c.github.io/requestidlecallback/)|Yes||
 |[Credential Management Level 1](https://w3c.github.io/webappsec-credential-management/)|Yes||
+|[DOM Parsing and Serialization](https://w3c.github.io/DOM-Parsing/)|Yes||
 |[DOM Standard](https://dom.spec.whatwg.org/)|Yes||
 |[Encrypted Media Extensions](https://w3c.github.io/encrypted-media/)|Yes||
 |[Fetch Standard](https://fetch.spec.whatwg.org/)|Yes||
@@ -59,6 +60,9 @@ in generated API.
 |[Network Information API](https://wicg.github.io/netinfo/)|Yes||
 |[Notifications API Standard](https://notifications.spec.whatwg.org/)|Yes||
 |[Page Visibility Level 2](https://w3c.github.io/page-visibility/)|Yes||
+|[Payment Handler API](https://w3c.github.io/payment-handler/)|Yes||
+|[Payment Method](https://w3c.github.io/payment-method-basic-card/)|Yes||
+|[Payment Request API](https://w3c.github.io/payment-request/)|Yes||
 |[Permissions](https://w3c.github.io/permissions/)|Yes||
 |[Picture-in-Picture](https://wicg.github.io/picture-in-picture/)|Yes||
 |[Pointer Events](https://w3c.github.io/pointerevents/)|Yes||
@@ -86,6 +90,7 @@ in generated API.
 |[Web Speech API](https://w3c.github.io/speech-api/)|Yes|Type changes in SpeechRecognitionEvent(Init)|
 |[WebGL 1.0 Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)|Yes||
 |[WebGL 2.0 Specification](https://www.khronos.org/registry/webgl/specs/latest/2.0/)|Yes||
+|[WebVR 1.1](https://immersive-web.github.io/webvr/spec/1.1/)|Yes||
 |[WebVTT](https://w3c.github.io/webvtt/)|Yes||
 |[WebXR Device API](https://immersive-web.github.io/webxr/)|Yes||
 |[Worklets Level 1](https://drafts.css-houdini.org/worklets/)|Yes||
@@ -107,7 +112,6 @@ in generated API.
 |[Compatibility Standard](https://compat.spec.whatwg.org/)|No||
 |[Console Standard](https://console.spec.whatwg.org/)|No||
 |[Content Security Policy](https://w3c.github.io/webappsec-cspee/)|No||
-|[DOM Parsing and Serialization](https://w3c.github.io/DOM-Parsing/)|No||
 |[DeviceOrientation Event Specification](https://w3c.github.io/deviceorientation/spec-source-orientation.html)|No||
 |[Encoding Standard](https://encoding.spec.whatwg.org/)|No||
 |[Event Timing API](https://wicg.github.io/event-timing/)|No||
@@ -127,9 +131,6 @@ in generated API.
 |[Navigation Timing Level 2](https://w3c.github.io/navigation-timing/)|No||
 |[Orientation Sensor](https://w3c.github.io/orientation-sensor/)|No||
 |[Paint Timing 1](https://w3c.github.io/paint-timing/)|No||
-|[Payment Handler API](https://w3c.github.io/payment-handler/)|No||
-|[Payment Method](https://w3c.github.io/payment-method-basic-card/)|No||
-|[Payment Request API](https://w3c.github.io/payment-request/)|No||
 |[Performance Timeline Level 2](https://w3c.github.io/performance-timeline/)|No||
 |[Pointer Lock 2.0](https://w3c.github.io/pointerlock/)|No||
 |[PointerEvents - Level 2 - Extensions](https://w3c.github.io/pointerevents/extension.html)|No||
