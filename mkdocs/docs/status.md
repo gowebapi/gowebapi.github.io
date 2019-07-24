@@ -9,9 +9,12 @@ in generated API.
 |----|---|---|
 |[Accelerated Shape Detection in Images](https://wicg.github.io/shape-detection-api/)|Yes||
 |[Accelerometer](https://w3c.github.io/accelerometer/)|Yes||
+|[Accessible Rich Internet Applications](https://rawgit.com/w3c/aria/master/)|Yes||
 |[Ambient Light Sensor](https://w3c.github.io/ambient-light/)|Yes||
+|[Audio Output Devices API](https://w3c.github.io/mediacapture-output/)|Yes||
 |[Background Fetch](https://wicg.github.io/background-fetch/)|Yes||
 |[Battery Status API](https://w3c.github.io/battery/)|Yes||
+|[Beacon](https://w3c.github.io/beacon/)|Yes||
 |[Box Tree API Level 1](https://drafts.css-houdini.org/box-tree-api/)|Yes||
 |[CORS and RFC1918](https://wicg.github.io/cors-rfc1918/)|Yes||
 |[CSS Animations Level 1](https://drafts.csswg.org/css-animations/)|Yes||
@@ -31,6 +34,8 @@ in generated API.
 |[CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)|Yes||
 |[CSSOM View Module](https://drafts.csswg.org/cssom-view/)|Yes||
 |[Clipboard API and events](https://w3c.github.io/clipboard-apis/)|Yes||
+|[Compatibility Standard](https://compat.spec.whatwg.org/)|Yes||
+|[Content Security Policy](https://w3c.github.io/webappsec-cspee/)|Yes||
 |[Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/)|Yes||
 |[Cookie Store API](https://wicg.github.io/cookie-store/)|Yes||
 |[Cooperative Scheduling of Background Tasks](https://w3c.github.io/requestidlecallback/)|Yes||
@@ -54,11 +59,13 @@ in generated API.
 |[Geolocation Sensor](https://wicg.github.io/geolocation-sensor/)|Yes||
 |[Geometry Interfaces Module Level 1](https://drafts.fxtf.org/geometry/)|Yes||
 |[Gyroscope](https://w3c.github.io/gyroscope/)|Yes||
+|[HTML Media Capture](https://w3c.github.io/html-media-capture/)|Yes||
 |[HTML Standard](https://html.spec.whatwg.org/)|Yes||
 |[High Resolution Time Level 2](https://w3c.github.io/hr-time/)|Yes||
 |[Identifiers for WebRTC's Statistics API](https://w3c.github.io/webrtc-stats/)|Yes||
 |[Indexed Database API 3.0](https://w3c.github.io/IndexedDB/)|Yes||
 |[Input Device Capabilities](https://wicg.github.io/InputDeviceCapabilities/)|Yes||
+|[Input Events Level 1](https://cdn.staticaly.com/gh/w3c/input-events/v1/index.html)|Yes||
 |[Intersection Observer](https://w3c.github.io/IntersectionObserver/)|Yes||
 |[Keyboard Lock](https://w3c.github.io/keyboard-lock/)|Yes||
 |[Keyboard Map](https://wicg.github.io/keyboard-map/)|Yes||
@@ -72,6 +79,7 @@ in generated API.
 |[Media Source Extensions™](https://w3c.github.io/media-source/)|Yes||
 |[MediaStream Image Capture](https://w3c.github.io/mediacapture-image/)|Yes||
 |[MediaStream Recording](https://w3c.github.io/mediacapture-record/)|Yes||
+|[MediaStreamTrack Content Hints](https://w3c.github.io/mst-content-hint/)|Yes||
 |[Missing types from different IDL](https://gowebapi.github.io)|Yes||
 |[Navigation Timing Level 2](https://w3c.github.io/navigation-timing/)|Yes||
 |[Network Information API](https://wicg.github.io/netinfo/)|Yes||
@@ -86,6 +94,8 @@ in generated API.
 |[Permissions](https://w3c.github.io/permissions/)|Yes||
 |[Picture-in-Picture](https://wicg.github.io/picture-in-picture/)|Yes||
 |[Pointer Events](https://w3c.github.io/pointerevents/)|Yes||
+|[Pointer Lock 2.0](https://w3c.github.io/pointerlock/)|Yes||
+|[PointerEvents - Level 2 - Extensions](https://w3c.github.io/pointerevents/extension.html)|Yes||
 |[Presentation API](https://w3c.github.io/presentation-api/)|Yes||
 |[Proximity Sensor](https://w3c.github.io/proximity/)|Yes||
 |[Push API](https://w3c.github.io/push-api/)|Yes||
@@ -97,6 +107,7 @@ in generated API.
 |[Scalable Vector Graphics 2](https://svgwg.org/svg2-draft/)|Yes||
 |[Screen Capture](https://w3c.github.io/mediacapture-screen-share/)|Yes||
 |[Scroll-linked Animations](https://wicg.github.io/scroll-animations/)|Yes||
+|[Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/)|Yes||
 |[Selection API](https://w3c.github.io/selection-api/)|Yes||
 |[Server Timing](https://w3c.github.io/server-timing/)|Yes||
 |[Service Workers 1](https://w3c.github.io/ServiceWorker/v1/)|Yes||
@@ -119,9 +130,11 @@ in generated API.
 |[Web NFC API](https://w3c.github.io/web-nfc/)|Yes||
 |[Web Share API - Level 1](https://wicg.github.io/web-share/)|Yes||
 |[Web Speech API](https://w3c.github.io/speech-api/)|Yes|Type changes in SpeechRecognitionEvent(Init)|
+|[WebDriver](https://w3c.github.io/webdriver/)|Yes||
 |[WebGL 1.0 Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)|Yes||
 |[WebGL 2.0 Specification](https://www.khronos.org/registry/webgl/specs/latest/2.0/)|Yes||
 |[WebRTC 1.0](https://w3c.github.io/webrtc-pc/)|Yes||
+|[WebRTC DSCP Control API](https://w3c.github.io/webrtc-dscp-exp/)|Yes||
 |[WebUSB API](https://wicg.github.io/webusb/)|Yes||
 |[WebVR 1.1](https://immersive-web.github.io/webvr/spec/1.1/)|Yes||
 |[WebVTT](https://w3c.github.io/webvtt/)|Yes||
@@ -129,30 +142,15 @@ in generated API.
 |[Worklets Level 1](https://drafts.css-houdini.org/worklets/)|Yes||
 |[XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)|Yes||
 
-
 ## Missing standard
 
 |Spec|Included|Comment|
 |----|---|---|
-|[Accessible Rich Internet Applications](https://rawgit.com/w3c/aria/master/)|No||
-|[Audio Output Devices API](https://w3c.github.io/mediacapture-output/)|No||
-|[Beacon](https://w3c.github.io/beacon/)|No||
 |[CSS Animation Worklet API](https://wicg.github.io/animation-worklet/)|No||
 |[CSS Images Module Level 4](https://drafts.csswg.org/css-images-4/)|No||
 |[CSS Parser API](https://wicg.github.io/CSS-Parser-API/)|No||
-|[Compatibility Standard](https://compat.spec.whatwg.org/)|No||
 |[Console Standard](https://console.spec.whatwg.org/)|No||
-|[Content Security Policy](https://w3c.github.io/webappsec-cspee/)|No||
-|[HTML Media Capture](https://w3c.github.io/html-media-capture/)|No||
-|[Input Events Level 1](https://cdn.staticaly.com/gh/w3c/input-events/v1/index.html)|No||
-|[MediaStreamTrack Content Hints](https://w3c.github.io/mst-content-hint/)|No||
-|[Pointer Lock 2.0](https://w3c.github.io/pointerlock/)|No||
-|[PointerEvents - Level 2 - Extensions](https://w3c.github.io/pointerevents/extension.html)|No||
-|[Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/)|No||
 |[Subresource Integrity](https://w3c.github.io/webappsec-subresource-integrity/)|No||
 |[Web IDL](https://heycam.github.io/webidl/)|No||
 |[WebAssembly JavaScript Interface](https://webassembly.github.io/spec/js-api/)|No||
 |[WebAssembly Web API](https://webassembly.github.io/spec/web-api/)|No||
-|[WebDriver](https://w3c.github.io/webdriver/)|No||
-|[WebRTC DSCP Control API](https://w3c.github.io/webrtc-dscp-exp/)|No||
-

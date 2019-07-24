@@ -3,6 +3,7 @@ nav:
   - Home: index.md
   - Status: status.md
   - Reference:
+    - Cross Reference: jscrossref.md
     - Files:
       - Overview: file/overview.md
       - WebIDL: file/webidl.md
